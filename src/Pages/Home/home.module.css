@@ -1,0 +1,87 @@
+/* .home{
+    display: flex;
+    justify-content: center;  
+    box-sizing: border-box;  
+    background-color: rgb(19, 24, 46);
+    color:antiquewhite;
+    height: 100vh;
+} */
+  
+.flexContainer {
+    display: flex;
+    width: 100%;
+
+    .home_hire{
+        background-color: orange;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1rem;
+
+        button{
+            padding: 0.5rem;
+            font-size: 3rem;
+            border-style: dashed;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            background-color: orange;
+        }
+        button:hover{
+            background-color: rgb(37, 37, 37);
+            color: antiquewhite;
+            border-radius: 1rem;
+        }
+    }
+    
+}
+  
+.flexItem {
+    /* This will make both flex items take up equal space  */
+    flex: 1;   
+    background-color: rgb(19, 24, 46);
+}
+
+.title{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    
+    h1{
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 4rem;
+        color: antiquewhite;
+    }
+
+    p{
+        color: lightgray;
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .flexContainer  { 
+        .home_hire{
+            button{
+                font-size: 2rem;
+            }
+        }
+    }
+  }
+  

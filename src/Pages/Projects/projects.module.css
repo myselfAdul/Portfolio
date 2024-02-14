@@ -1,0 +1,26 @@
+.projects_page{
+    min-height: 100vh;
+    color: antiquewhite;  
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:  Georgia, 'Times New Roman', Times, serif;;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding: 1rem;   
+        
+    }  
+    .projectList{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
+        
+    }
+}
+
+
+
+

@@ -1,0 +1,37 @@
+.project{
+
+    .image{
+        max-width: 500px;
+        height: 300px;
+        overflow: hidden;
+        background-color: rgba(48, 49, 48, 0.342);
+        background-color:transparent;
+
+        img{
+            border-radius: 5px;
+        } 
+    }
+
+    .image:hover{
+        cursor: pointer;
+        box-shadow: 5px 2px 4px orangered;
+        transform: scale(1.01);
+        transition: transform 500ms ease;
+    }
+
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(67, 66, 66, 0.473);
+        min-width: 500px;
+        max-width: 500px;
+        padding: 1rem;
+    }
+    
+
+    
+}
+
+
+
+
