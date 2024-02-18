@@ -43,11 +43,10 @@ const Contact = () => {
         
       {/* <button className={styles.send_btn} type="submit" value="Send" /> */}
 
-      <button className={styles.send_btn} type="submit" value="Send"> Submit</button>
-
-
+      <div>
+        <button className={styles.send_btn} type="submit" value="Send"> Submit</button>
+      </div>
       
-
     </form>
   )
 }

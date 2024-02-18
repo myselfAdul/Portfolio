@@ -1,15 +1,9 @@
-/* .home{
-    display: flex;
-    justify-content: center;  
-    box-sizing: border-box;  
-    background-color: rgb(19, 24, 46);
-    color:antiquewhite;
-    height: 100vh;
-} */
   
 .flexContainer {
     display: flex;
     width: 100%;
+    height: auto;
+    
 
     .home_hire{
         background-color: orange;
@@ -18,7 +12,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 1rem;
+        padding: 0.5rem;
 
         button{
             padding: 0.5rem;
@@ -50,6 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     
     h1{

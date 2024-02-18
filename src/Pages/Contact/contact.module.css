@@ -1,29 +1,28 @@
-.contact_form{   
-    height: 100vh;
+.contact_form {
+    height: auto;
+    /* display: flex; */
+    section {
+        padding: 20px;
+    }
     
-    
-    div{
+    div {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        
         margin: 20px;
-        
 
-        label{ 
+        label {
             font-size: 2.5rem;
             font-weight: 700;
-            /* background-color: orange; */
             padding: 10px;
             border-radius: 0.2rem;
-            /* max-width: auto; */
             color: antiquewhite;
-            font-family:  Georgia, 'Times New Roman', Times, serif;;
-            
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        input{
+
+        input {
             min-width: 30rem;
-            max-width: 600px;
+            max-width: 10rem;
             min-height: 3rem;
             border-radius: 5px;
             border-style: none;
@@ -31,10 +30,9 @@
             background-color: rgba(0, 0, 0, 0.424);
             color: antiquewhite;
             font-size: larger;
-            
         }
 
-        textarea{
+        textarea {
             resize: none;
             min-width: 30rem;
             max-width: 800px;
@@ -44,30 +42,42 @@
             background-color: rgba(0, 0, 0, 0.424);
             color: antiquewhite;
             font-size: 20px;
-            /* color: black; */
-            /* background-color:aliceblue; */
-
         }
-
-
     }
-    button{
-        background-color:rgba(255, 68, 0, 0.578);
+
+    button {
+        max-width: 7rem;
+        background-color: rgba(255, 68, 0, 0.578);
         font-size: larger;
         color: antiquewhite;
         padding: 10px;
-        margin-left: 20px;
         cursor: pointer;
         border: none;
-        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: bolder;
         margin-bottom: 10px;
         border-radius: 2px;
-
     }
-    button:hover{
-        background-color:antiquewhite;
+
+    button:hover {
+        background-color: antiquewhite;
         color: black;
     }
-}
 
+    @media (max-width: 768px) {
+        div {
+            label {
+                font-size: 30px;
+            }
+            input {
+                max-width: 90%; /* Adjust as needed */
+                font-size: small;
+            }
+            textarea {
+                max-width: 90%; /* Adjust as needed */
+                font-size: small;
+                max-height: 50vh; /* Adjust as needed */
+            }
+        }
+    }
+}

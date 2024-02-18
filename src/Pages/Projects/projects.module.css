@@ -1,5 +1,12 @@
 .projects_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 100vh;
+    max-width: 100vw;
     color: antiquewhite;  
     h1{
         display: flex;
@@ -18,9 +25,20 @@
         gap: 1rem;
         padding: 2rem;
         
+        
     }
 }
 
+@media (max-width: 768px) {
+    .projects_page{
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        
 
+    }
+    
+  }
+  
 
 
